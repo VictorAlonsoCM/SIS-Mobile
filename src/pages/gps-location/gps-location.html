@@ -1,0 +1,11 @@
+<form [formGroup]="formGroupPhone">
+  <ion-item>
+    <ion-label floating>Numero celular</ion-label>
+    <ion-input [(ngModel)]="phone" type="number" aria-autocomplete="both" pattern="[0-9]*" formControlName="phoneN"></ion-input>
+  </ion-item>
+  <button ion-button block (click)="submitForm()" [disabled]="!formGroupPhone.valid">Enviar ubicación</button>
+</form>
+
+<p>Latitud: {{ latitude }}</p>
+<p>Longitud: {{ longitude }}</p>
+<p>Timestamp: {{ timestamp }}</p>

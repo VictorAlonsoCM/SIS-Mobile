@@ -1,0 +1,7 @@
+{
+  "name": "SISMobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
